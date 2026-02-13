@@ -19,18 +19,18 @@ const Contact: React.FC = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
-        const mailtoSubject = encodeURIComponent(formData.subject || 'Website Inquiry');
-        const mailtoBody = encodeURIComponent(
-            `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
+        const subject = encodeURIComponent(formData.subject || 'Website Inquiry');
+        const body = encodeURIComponent(
+            `Name: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\n\nMessage:\n${formData.message}`
         );
 
-        window.location.href = `mailto:${companyInfo.email}?subject=${mailtoSubject}&body=${mailtoBody}`;
+        window.open(`mailto:info@bj-engsupply.com?subject=${subject}&body=${body}`, '_self');
 
         setSubmitted(true);
         setTimeout(() => {
             setSubmitted(false);
             setFormData({ name: '', email: '', subject: '', message: '' });
-        }, 3000);
+        }, 4000);
     };
 
     return (
@@ -96,8 +96,8 @@ const Contact: React.FC = () => {
                         {submitted ? (
                             <div className="flex flex-col items-center justify-center py-16 text-center">
                                 <CheckCircle className="w-16 h-16 text-green-500 mb-4" />
-                                <h4 className="text-xl font-bold text-primary mb-2">Opening your email client...</h4>
-                                <p className="text-secondary">Your message is ready to send to {companyInfo.email}</p>
+                                <h4 className="text-xl font-bold text-primary mb-2">Message Ready!</h4>
+                                <p className="text-secondary">Your email client should open with a message to <strong>info@bj-engsupply.com</strong>. Please click send in your email app.</p>
                             </div>
                         ) : (
                             <form onSubmit={handleSubmit} className="space-y-4">
