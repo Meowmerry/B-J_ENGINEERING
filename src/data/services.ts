@@ -95,6 +95,17 @@ export const productCategories: ProductCategory[] = [
         ],
     },
     {
+        id: 'metal-fabrication-products',
+        title: 'Metal Fabrication',
+        description: 'Custom metal fabrication including structural steel, sheet metal work, and precision cutting and bending.',
+        products: [
+            { id: 'fab-1', name: 'Structural Steel Frames', image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&h=300&fit=crop' },
+            { id: 'fab-2', name: 'Sheet Metal Enclosures', image: 'https://images.unsplash.com/photo-1565439396655-e7a93cebf2d5?w=400&h=300&fit=crop' },
+            { id: 'fab-3', name: 'Custom Metal Brackets', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop' },
+            { id: 'fab-4', name: 'Tanks & Vessels', image: 'https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?w=400&h=300&fit=crop' },
+        ],
+    },
+    {
         id: 'cnc-lathe-parts',
         title: 'CNC Lathe Parts',
         description: 'High-precision turned parts including shafts, bushings, threaded bolts, and custom cylindrical components.',
@@ -105,6 +116,16 @@ export const productCategories: ProductCategory[] = [
         ],
     },
     {
+        id: 'welding-products',
+        title: 'Welding Service',
+        description: 'Professional welding for structural components, piping systems, and custom metal assemblies.',
+        products: [
+            { id: 'weld-1', name: 'Structural Welding', image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&h=300&fit=crop' },
+            { id: 'weld-2', name: 'Pipe & Tube Welding', image: 'https://images.unsplash.com/photo-1565439396655-e7a93cebf2d5?w=400&h=300&fit=crop' },
+            { id: 'weld-3', name: 'Custom Metal Assemblies', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop' },
+        ],
+    },
+    {
         id: 'mold-die-products',
         title: 'Mold & Die Products',
         description: 'Custom molds, dies, and tooling blocks for injection molding, stamping, and industrial manufacturing.',
@@ -112,6 +133,27 @@ export const productCategories: ProductCategory[] = [
             { id: 'mold-1', name: 'Injection Molds', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop' },
             { id: 'mold-2', name: 'Stamping Dies', image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&h=300&fit=crop' },
             { id: 'mold-3', name: 'Custom Tooling Blocks', image: 'https://images.unsplash.com/photo-1565439396655-e7a93cebf2d5?w=400&h=300&fit=crop' },
+        ],
+    },
+    {
+        id: 'equipment-maintenance-products',
+        title: 'Equipment Replacement & Maintenance',
+        description: 'Replacement parts and maintenance services for motors, valves, pumps, and industrial machinery.',
+        products: [
+            { id: 'equip-1', name: 'Motor Repairs & Replacement', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop' },
+            { id: 'equip-2', name: 'Valve & Pump Services', image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&h=300&fit=crop' },
+            { id: 'equip-3', name: 'Conveyor Parts & Rollers', image: 'https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?w=400&h=300&fit=crop' },
+            { id: 'equip-4', name: 'Steam Reactor Maintenance', image: 'https://images.unsplash.com/photo-1565439396655-e7a93cebf2d5?w=400&h=300&fit=crop' },
+        ],
+    },
+    {
+        id: 'die-casting-products',
+        title: 'Die Casting',
+        description: 'High-volume die cast parts with excellent dimensional accuracy for automotive, electronics, and industrial use.',
+        products: [
+            { id: 'cast-1', name: 'Aluminum Die Cast Parts', image: 'https://images.unsplash.com/photo-1565439396655-e7a93cebf2d5?w=400&h=300&fit=crop' },
+            { id: 'cast-2', name: 'Zinc Die Cast Components', image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&h=300&fit=crop' },
+            { id: 'cast-3', name: 'Custom Cast Housings', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop' },
         ],
     },
     {
